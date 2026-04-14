@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Nasconde la scrollbar su tutti i dispositivi ma mantiene lo scroll */
+.hide-scrollbar {
+  -ms-overflow-style: none;       /* IE e Edge */
+  scrollbar-width: none;          /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;                  /* Chrome, Safari, Edge */
+}
+
+/* Scrollbar personalizzata Townia - sottile e elegante */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #404e72 #1e2937; /* violet-800 su sfondo scuro */
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #1e2937; /* sfondo scuro */
+  border-radius: 20px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #6b21a8; /* violet-800 */
+  border-radius: 20px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed; /* violet-600 al hover */
+}
